@@ -1,0 +1,16 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.row div{
+    margin-left: 5px;
+    padding: 5px;
+    height: 100%;
+}
+
+.row:nth-child(even) {
+    background-color: lightgray;
+}
