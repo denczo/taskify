@@ -1,0 +1,606 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 4,
+      "dueDate": "31.12.2025",
+      "done": false
+    },
+    {
+      "id": 2,
+      "label": "Mess- und Bilanzierungskonzept erstellen",
+      "responsible": 36,
+      "dueDate": "31.12.2024",
+      "done": true
+    },
+    {
+      "id": 3,
+      "label": "Mess- und Bilanzierungskonzept erstellen",
+      "responsible": 3,
+      "dueDate": "31.12.2022",
+      "done": false
+    },
+    {
+      "id": 4,
+      "label": "Regulatorische Daten vervollständigen",
+      "responsible": 35,
+      "dueDate": "31.12.2023",
+      "done": false
+    },
+    {
+      "id": 5,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 47,
+      "dueDate": "04.05.2025",
+      "done": false
+    },
+    {
+      "id": 6,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 33,
+      "dueDate": "31.12.2022",
+      "done": false
+    },
+    {
+      "id": 7,
+      "label": "Vollmacht für MSB bereitstellen",
+      "responsible": 40,
+      "dueDate": "01.01.2022",
+      "done": true
+    },
+    {
+      "id": 8,
+      "label": "Vollmacht für MSB bereitstellen",
+      "responsible": 36,
+      "dueDate": "05.04.2063",
+      "done": false
+    },
+    {
+      "id": 9,
+      "label": "Historische MSB-Daten integrieren für 2022",
+      "responsible": 24,
+      "dueDate": "01.10.2023",
+      "done": false
+    },
+    {
+      "id": 10,
+      "label": "Vollmacht für MSB bereitstellen",
+      "responsible": 16,
+      "dueDate": "05.04.2063",
+      "done": false
+    },
+    {
+      "id": 11,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
+      "responsible": 12,
+      "dueDate": "04.05.2025",
+      "done": false
+    },
+    {
+      "id": 12,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 41,
+      "dueDate": "11.12.2024",
+      "done": false
+    },
+    {
+      "id": 13,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
+      "responsible": 17,
+      "dueDate": "11.12.2024",
+      "done": false
+    },
+    {
+      "id": 14,
+      "label": "Mess- und Bilanzierungskonzept erstellen",
+      "responsible": 19,
+      "dueDate": "31.12.2024",
+      "done": false
+    },
+    {
+      "id": 15,
+      "label": "Historische MSB-Daten integrieren für 2022",
+      "responsible": 35,
+      "dueDate": "31.12.2024",
+      "done": false
+    },
+    {
+      "id": 16,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
+      "responsible": 46,
+      "dueDate": "01.01.2022",
+      "done": false
+    },
+    {
+      "id": 17,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 22,
+      "dueDate": "04.05.2025",
+      "done": true
+    },
+    {
+      "id": 18,
+      "label": "Kontinuierlicher Messdatenempfang aus Untermesssystemen einrichten",
+      "responsible": 35,
+      "dueDate": "01.10.2023",
+      "done": true
+    },
+    {
+      "id": 19,
+      "label": "Konfiguration anlegen",
+      "responsible": 47,
+      "dueDate": "31.12.2022",
+      "done": true
+    },
+    {
+      "id": 20,
+      "label": "Historische MSB-Daten integrieren für 2022",
+      "responsible": 44,
+      "dueDate": "31.12.2022",
+      "done": true
+    },
+    {
+      "id": 21,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 20,
+      "dueDate": "04.05.2025",
+      "done": false
+    },
+    {
+      "id": 22,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 20,
+      "dueDate": "05.04.2063",
+      "done": true
+    },
+    {
+      "id": 23,
+      "label": "Kontinuierlicher Messdatenempfang aus Untermesssystemen einrichten",
+      "responsible": 29,
+      "dueDate": "01.01.2022",
+      "done": true
+    },
+    {
+      "id": 24,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen bereitstellen",
+      "responsible": 7,
+      "dueDate": "04.05.2025",
+      "done": true
+    },
+    {
+      "id": 25,
+      "label": "Kontinuierlicher Messdatenempfang aus Untermesssystemen einrichten",
+      "responsible": 31,
+      "dueDate": "31.12.2022",
+      "done": true
+    },
+    {
+      "id": 26,
+      "label": "Historische MSB-Daten integrieren für 2022",
+      "responsible": 2,
+      "dueDate": "05.04.2063",
+      "done": false
+    },
+    {
+      "id": 27,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
+      "responsible": 14,
+      "dueDate": "01.01.2022",
+      "done": false
+    },
+    {
+      "id": 28,
+      "label": "Historische MSB-Daten integrieren für 2022",
+      "responsible": 2,
+      "dueDate": "05.04.2063",
+      "done": true
+    },
+    {
+      "id": 29,
+      "label": "Mess- und Bilanzierungskonzept erstellen",
+      "responsible": 7,
+      "dueDate": "31.12.2024",
+      "done": true
+    },
+    {
+      "id": 30,
+      "label": "Vollmacht für MSB bereitstellen",
+      "responsible": 50,
+      "dueDate": "31.12.2022",
+      "done": false
+    },
+    {
+      "id": 31,
+      "label": "Mess- und Bilanzierungskonzept erstellen",
+      "responsible": 6,
+      "dueDate": "31.12.2023",
+      "done": false
+    },
+    {
+      "id": 32,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 27,
+      "dueDate": "01.10.2023",
+      "done": true
+    },
+    {
+      "id": 33,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen bereitstellen",
+      "responsible": 17,
+      "dueDate": "01.10.2023",
+      "done": false
+    },
+    {
+      "id": 34,
+      "label": "Konfiguration anlegen",
+      "responsible": 12,
+      "dueDate": "31.12.2025",
+      "done": false
+    },
+    {
+      "id": 35,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen bereitstellen",
+      "responsible": 18,
+      "dueDate": "31.12.2022",
+      "done": true
+    },
+    {
+      "id": 36,
+      "label": "Historische MSB-Daten integrieren für 2022",
+      "responsible": 6,
+      "dueDate": "31.12.2024",
+      "done": false
+    },
+    {
+      "id": 37,
+      "label": "Aufgabenliste mit regulatorischen Pflichten anlegen",
+      "responsible": 45,
+      "dueDate": "01.01.2022",
+      "done": false
+    },
+    {
+      "id": 38,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
+      "responsible": 42,
+      "dueDate": "05.04.2063",
+      "done": true
+    },
+    {
+      "id": 39,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 45,
+      "dueDate": "01.01.2022",
+      "done": false
+    },
+    {
+      "id": 40,
+      "label": "Kontinuierlicher Messdatenempfang aus Untermesssystemen einrichten",
+      "responsible": 27,
+      "dueDate": "11.12.2024",
+      "done": false
+    },
+    {
+      "id": 41,
+      "label": "Vollmacht für MSB bereitstellen",
+      "responsible": 10,
+      "dueDate": "31.12.2023",
+      "done": true
+    },
+    {
+      "id": 42,
+      "label": "Kontinuierlicher Messdatenempfang aus Untermesssystemen einrichten",
+      "responsible": 16,
+      "dueDate": "04.05.2025",
+      "done": true
+    },
+    {
+      "id": 43,
+      "label": "Kontinuierlicher Messdatenempfang aus Untermesssystemen einrichten",
+      "responsible": 38,
+      "dueDate": "01.01.2022",
+      "done": true
+    },
+    {
+      "id": 44,
+      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
+      "responsible": 19,
+      "dueDate": "31.12.2023",
+      "done": false
+    },
+    {
+      "id": 45,
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
+      "responsible": 37,
+      "dueDate": "31.12.2024",
+      "done": true
+    },
+    {
+      "id": 46,
+      "label": "Historische MSB-Daten integrieren für 2022",
+      "responsible": 34,
+      "dueDate": "04.05.2025",
+      "done": false
+    },
+    {
+      "id": 47,
+      "label": "Aufgabenliste mit regulatorischen Pflichten anlegen",
+      "responsible": 48,
+      "dueDate": "31.12.2025",
+      "done": true
+    },
+    {
+      "id": 48,
+      "label": "Regulatorische Daten vervollständigen",
+      "responsible": 41,
+      "dueDate": "11.12.2024",
+      "done": false
+    },
+    {
+      "id": 49,
+      "label": "Aufgabenliste mit regulatorischen Pflichten anlegen",
+      "responsible": 41,
+      "dueDate": "31.12.2023",
+      "done": false
+    },
+    {
+      "id": 50,
+      "label": "Mess- und Bilanzierungskonzept erstellen",
+      "responsible": 44,
+      "dueDate": "01.01.2022",
+      "done": true
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "name": "Orelie Ledbury",
+      "email": "oledbury0@dot.gov"
+    },
+    {
+      "id": 2,
+      "name": "Darelle Kiely",
+      "email": "dkiely1@tinyurl.com"
+    },
+    {
+      "id": 3,
+      "name": "Dehlia Warrillow",
+      "email": "dwarrillow2@vk.com"
+    },
+    {
+      "id": 4,
+      "name": "Coraline Clarage",
+      "email": "cclarage3@taobao.com"
+    },
+    {
+      "id": 5,
+      "name": "Charlene Sibyllina",
+      "email": "csibyllina4@epa.gov"
+    },
+    {
+      "id": 6,
+      "name": "Sigismundo Spaunton",
+      "email": "sspaunton5@wisc.edu"
+    },
+    {
+      "id": 7,
+      "name": "Anitra Pech",
+      "email": "apech6@virginia.edu"
+    },
+    {
+      "id": 8,
+      "name": "Idette Pike",
+      "email": "ipike7@admin.ch"
+    },
+    {
+      "id": 9,
+      "name": "Baillie Bourget",
+      "email": "bbourget8@apple.com"
+    },
+    {
+      "id": 10,
+      "name": "Emmery Celand",
+      "email": "eceland9@scribd.com"
+    },
+    {
+      "id": 11,
+      "name": "Carson Greaser",
+      "email": "cgreasera@hostgator.com"
+    },
+    {
+      "id": 12,
+      "name": "Doro Stolze",
+      "email": "dstolzeb@stumbleupon.com"
+    },
+    {
+      "id": 13,
+      "name": "Nathanial Sessuns",
+      "email": "nsessunsc@berkeley.edu"
+    },
+    {
+      "id": 14,
+      "name": "Morgan Marrison",
+      "email": "mmarrisond@skyrock.com"
+    },
+    {
+      "id": 15,
+      "name": "Cheslie Longstaff",
+      "email": "clongstaffe@salon.com"
+    },
+    {
+      "id": 16,
+      "name": "Yolane Walne",
+      "email": "ywalnef@vk.com"
+    },
+    {
+      "id": 17,
+      "name": "Mag Bramont",
+      "email": "mbramontg@people.com.cn"
+    },
+    {
+      "id": 18,
+      "name": "Evelina Poulsom",
+      "email": "epoulsomh@ihg.com"
+    },
+    {
+      "id": 19,
+      "name": "Saidee Kift",
+      "email": "skifti@rakuten.co.jp"
+    },
+    {
+      "id": 20,
+      "name": "Raynell Brunelleschi",
+      "email": "rbrunelleschij@deliciousdays.com"
+    },
+    {
+      "id": 21,
+      "name": "Anselm Zorzutti",
+      "email": "azorzuttik@icio.us"
+    },
+    {
+      "id": 22,
+      "name": "Binnie Woolway",
+      "email": "bwoolwayl@vk.com"
+    },
+    {
+      "id": 23,
+      "name": "Winni Corton",
+      "email": "wcortonm@forbes.com"
+    },
+    {
+      "id": 24,
+      "name": "Gareth Klaessen",
+      "email": "gklaessenn@soup.io"
+    },
+    {
+      "id": 25,
+      "name": "Alic Arons",
+      "email": "aaronso@china.com.cn"
+    },
+    {
+      "id": 26,
+      "name": "Barri Delos",
+      "email": "bdelosp@omniture.com"
+    },
+    {
+      "id": 27,
+      "name": "Jamie Jackling",
+      "email": "jjacklingq@bloglovin.com"
+    },
+    {
+      "id": 28,
+      "name": "Vonny Primak",
+      "email": "vprimakr@blog.com"
+    },
+    {
+      "id": 29,
+      "name": "Shelby Doxey",
+      "email": "sdoxeys@intel.com"
+    },
+    {
+      "id": 30,
+      "name": "Munroe Ofen",
+      "email": "mofent@youku.com"
+    },
+    {
+      "id": 31,
+      "name": "Cooper Bugdell",
+      "email": "cbugdellu@jalbum.net"
+    },
+    {
+      "id": 32,
+      "name": "Ursola Karczinski",
+      "email": "ukarczinskiv@tuttocitta.it"
+    },
+    {
+      "id": 33,
+      "name": "Grata Wyllcock",
+      "email": "gwyllcockw@phoca.cz"
+    },
+    {
+      "id": 34,
+      "name": "Mohammed Cumberland",
+      "email": "mcumberlandx@deviantart.com"
+    },
+    {
+      "id": 35,
+      "name": "Ceciley Cardiff",
+      "email": "ccardiffy@google.de"
+    },
+    {
+      "id": 36,
+      "name": "Annalee Le Grice",
+      "email": "alez@ow.ly"
+    },
+    {
+      "id": 37,
+      "name": "Dilan Dickinson",
+      "email": "ddickinson10@businessweek.com"
+    },
+    {
+      "id": 38,
+      "name": "Iorgos Clemmow",
+      "email": "iclemmow11@newsvine.com"
+    },
+    {
+      "id": 39,
+      "name": "Catrina Corking",
+      "email": "ccorking12@naver.com"
+    },
+    {
+      "id": 40,
+      "name": "Trescha Cloney",
+      "email": "tcloney13@spotify.com"
+    },
+    {
+      "id": 41,
+      "name": "Ailee Gayther",
+      "email": "agayther14@digg.com"
+    },
+    {
+      "id": 42,
+      "name": "Syd Ewell",
+      "email": "sewell15@shinystat.com"
+    },
+    {
+      "id": 43,
+      "name": "Peter Prawle",
+      "email": "pprawle16@gravatar.com"
+    },
+    {
+      "id": 44,
+      "name": "Hazel Truce",
+      "email": "htruce17@dailymail.co.uk"
+    },
+    {
+      "id": 45,
+      "name": "Algernon Mulvey",
+      "email": "amulvey18@w3.org"
+    },
+    {
+      "id": 46,
+      "name": "Billy Rojahn",
+      "email": "brojahn19@booking.com"
+    },
+    {
+      "id": 47,
+      "name": "Dalila Lamcken",
+      "email": "dlamcken1a@thetimes.co.uk"
+    },
+    {
+      "id": 48,
+      "name": "Elvyn Lago",
+      "email": "elago1b@godaddy.com"
+    },
+    {
+      "id": 49,
+      "name": "Daniella Crossgrove",
+      "email": "dcrossgrove1c@aol.com"
+    },
+    {
+      "id": 50,
+      "name": "Jaye Knightly",
+      "email": "jknightly1d@google.com"
+    }
+  ]
+}
