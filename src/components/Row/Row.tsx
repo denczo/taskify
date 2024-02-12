@@ -5,17 +5,18 @@ interface Task {
   label: String,
   responsible: number,
   dueDate: String,
-  done: boolean
+  done: boolean,
 }
 
 const Row = ({data} : {data: Task}) => {
 
   return (
     <div className="row">
+          <div style={{minWidth: '50px'}}><input type="checkbox" /></div>
           <div style={{minWidth: '600px'}}>{data.label}</div>
           <div style={{minWidth: '200px'}}>{data.responsible}</div>
           <div style={{minWidth: '150px'}}>{data.dueDate}</div>
-          <div style={{minWidth: '100px'}}>{data.done}</div>
+          <div style={{minWidth: '100px'}}>{data.done? "Erledigt" : "Offen"}</div>
     </div>
   );
 }

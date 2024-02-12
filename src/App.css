@@ -1,5 +1,4 @@
 .App {
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -10,13 +9,13 @@
   height: 70px;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* background-color: aqua; */
 }
 
 #headerContent{
   display: flex;
   width: 90%;
   align-items: center;
+  justify-content: space-between;
 }
 
 #content{

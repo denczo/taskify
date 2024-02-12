@@ -1,0 +1,13 @@
+.button{
+    padding: 5px;
+    border: 2px solid black;
+    transition: 0.3s;
+    user-select: none;
+    margin-left: 5px;
+}
+
+.button:hover{
+    background-color: lightgray;
+    transition: 0.3s;
+    cursor: pointer;
+}
