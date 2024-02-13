@@ -7,7 +7,7 @@ const Row = ({data, person} : {data: Task, person: String}) => {
 
   const ui = useUiContext();
   const dueDateConverted = parseGermanDate(data.dueDate);
-  const dateStatus = dueDateConverted? (new Date(dueDateConverted).getTime() < Date.now() && !data.done? "Überfällig" : data.dueDate): "";
+  const dateStatus = new Date(dueDateConverted).getTime() < Date.now() && !data.done? "Überfällig" : data.dueDate!;
 
   return (
     <div className="row">
