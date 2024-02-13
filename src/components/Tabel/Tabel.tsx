@@ -1,43 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import TabelHeader from "../TabelHeader.tsx/TabelHeader";
 import "./Tabel.css";
 import Row from "../Row/Row";
-
-interface Task {
-    id: number,
-    label: String,
-    responsible: number,
-    dueDate: String,
-    done: boolean
-}
+import { useTaskContext } from "../../contexts/TaskProvider";
 
 const Tabel = () => {
 
-    const [tasks, setTasks] = useState<Task[]>([]);
-
-    const fetchData = async () => {
-        const response = await fetch('http://localhost:3004/todos/');
-        const data = await response.json();
-        return data as Task[];
-    }
+    const task = useTaskContext();
 
     useEffect(() => {
-        const fetchDataAndSetState = async () => {
-            try {
-                const data = await fetchData();
-                setTasks(data);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-
-        fetchDataAndSetState();
+        task?.getTasks();
     }, [])
 
     return (<div className="tabel">
         <TabelHeader />
-        <div style={{height: '700px', overflowY: 'scroll', overflowX: 'hidden'}}>
-        {tasks.map(task => <Row data={task} key={task.id} />)}
+        <div style={{ height: '700px', overflowY: 'scroll', overflowX: 'hidden' }}>
+            {task?.tasks.map(task => {
+                // const person = persons.find(p => p.id === task.responsible);
+                // return <Row data={task} person={person ? person.name : task.responsible.toString()} key={task.id} />
+                                return <Row data={task} person={task.responsible.toString()} key={task.id} />
+
+            })}
         </div>
     </div>
     );

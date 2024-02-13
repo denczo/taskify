@@ -1,20 +1,21 @@
+import { Task } from "../../interfaces/Interfaces";
 import "./Row.css";
+import { useUiContext } from "../../contexts/UiProvider";
 
-interface Task {
-  id: number,
-  label: String,
-  responsible: number,
-  dueDate: String,
-  done: boolean,
-}
+const Row = ({data, person} : {data: Task, person: String}) => {
 
-const Row = ({data} : {data: Task}) => {
+  const ui = useUiContext();
 
   return (
     <div className="row">
-          <div style={{minWidth: '50px'}}><input type="checkbox" /></div>
+          <div style={{minWidth: '50px'}}>
+            <input type="checkbox" 
+              onChange={() => ui?.handleCheckboxChange(data.id)} 
+              checked={data.id === ui?.taskId}
+            />
+            </div>
           <div style={{minWidth: '600px'}}>{data.label}</div>
-          <div style={{minWidth: '200px'}}>{data.responsible}</div>
+          <div style={{minWidth: '200px'}}>{person}</div>
           <div style={{minWidth: '150px'}}>{data.dueDate}</div>
           <div style={{minWidth: '100px'}}>{data.done? "Erledigt" : "Offen"}</div>
     </div>

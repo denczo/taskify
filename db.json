@@ -1,38 +1,10 @@
 {
   "todos": [
     {
-      "id": 1,
-      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
-      "responsible": 4,
-      "dueDate": "31.12.2025",
-      "done": false
-    },
-    {
-      "id": 2,
-      "label": "Mess- und Bilanzierungskonzept erstellen",
-      "responsible": 36,
-      "dueDate": "31.12.2024",
-      "done": true
-    },
-    {
-      "id": 3,
-      "label": "Mess- und Bilanzierungskonzept erstellen",
-      "responsible": 3,
-      "dueDate": "31.12.2022",
-      "done": false
-    },
-    {
       "id": 4,
       "label": "Regulatorische Daten vervollständigen",
       "responsible": 35,
       "dueDate": "31.12.2023",
-      "done": false
-    },
-    {
-      "id": 5,
-      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
-      "responsible": 47,
-      "dueDate": "04.05.2025",
       "done": false
     },
     {
