@@ -1,22 +1,16 @@
-import { useState } from "react";
 import "./App.css";
 import ButtonPanel from "./components/ButtonPanel/ButtonPanel";
 import Tabel from "./components/Tabel/Tabel";
-import { TaskProvider } from "./contexts/TaskProvider";
-import { UiProvider } from "./contexts/UiProvider";
+import { useUiContext } from "./contexts/UiProvider";
+import Popup from "./components/Popup/Popup";
 
-function App() {
+const App = () => {
 
-  const [showPopup, setShowPopup] = useState(false);
-
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
-  };
+  const ui = useUiContext();
 
   return (
-    <TaskProvider>
-      <UiProvider>
       <div className="App">
+        {ui?.popupActive? <Popup /> : <></>}
         <header className="App-header">
           <div id="headerContent">
             Aufgabenliste
@@ -27,9 +21,6 @@ function App() {
           <Tabel />
         </div>
       </div>
-      </UiProvider>
-    </TaskProvider>
-
   );
 }
 

@@ -1,27 +1,6 @@
 {
   "todos": [
     {
-      "id": 4,
-      "label": "Regulatorische Daten vervollständigen",
-      "responsible": 35,
-      "dueDate": "31.12.2023",
-      "done": false
-    },
-    {
-      "id": 6,
-      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
-      "responsible": 33,
-      "dueDate": "31.12.2022",
-      "done": false
-    },
-    {
-      "id": 7,
-      "label": "Vollmacht für MSB bereitstellen",
-      "responsible": 40,
-      "dueDate": "01.01.2022",
-      "done": true
-    },
-    {
       "id": 8,
       "label": "Vollmacht für MSB bereitstellen",
       "responsible": 36,
@@ -33,13 +12,6 @@
       "label": "Historische MSB-Daten integrieren für 2022",
       "responsible": 24,
       "dueDate": "01.10.2023",
-      "done": false
-    },
-    {
-      "id": 10,
-      "label": "Vollmacht für MSB bereitstellen",
-      "responsible": 16,
-      "dueDate": "05.04.2063",
       "done": false
     },
     {

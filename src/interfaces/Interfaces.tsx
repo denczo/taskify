@@ -1,22 +1,24 @@
 export interface Task {
     id: number,
-    label: String,
+    label: string,
     responsible: number,
-    dueDate: String,
+    dueDate: string,
     done: boolean
 }
 
 export interface Person {
     id: number,
-    name: String,
-    email: String,
+    name: string,
+    email: string,
 }
 
 export interface TaskContextType {
+    persons: Person[];
+    getPersons: () => void;
     tasks: Task[];
     getTasks: () => void;
     // addTask: (task: Task) => void;
-    deleteTask: () => void;
+    deleteTask: (taskId: number) => void;
 }
 
 export interface UiContextType {
@@ -24,4 +26,5 @@ export interface UiContextType {
     popupActive: boolean;
     togglePopup: () => void;
     handleCheckboxChange: (taskId: number) => void;
+    parseGermanDate: (dateString: string) => void;
 }

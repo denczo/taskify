@@ -1,22 +1,17 @@
-import { useState } from "react";
 import Button from "../Button/Button";
 import "./ButtonPanel.css";
 import { useTaskContext } from "../../contexts/TaskProvider";
+import { useUiContext } from "../../contexts/UiProvider";
 
 const ButtonPanel = () => {
 
     const task = useTaskContext();
-    const [showPopup, setShowPopup] = useState(false);
-
-
-    const togglePopup = () => {
-      setShowPopup(!showPopup);
-    };
+    const ui = useUiContext();
 
     return (<div id="buttonPanel">
-        <Button onClick={undefined} name={"Aufgabe hinzufügen"} />
-        <Button onClick={undefined} name={"Aufgabe editieren"} />
-        <Button onClick={task?.deleteTask} name={"Aufgabe löschen"} />
+        <Button onClick={ui?.togglePopup} name={"Aufgabe hinzufügen"} />
+        <Button onClick={ui?.togglePopup} name={"Aufgabe editieren"} />
+        <Button onClick={() => task?.deleteTask(ui?.taskId || 0)} name={"Aufgabe löschen"} />
     </div>
     );
 }

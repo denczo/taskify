@@ -1,14 +1,15 @@
-import React, { createContext, useContext, useState } from 'react';
-import { Task, TaskContextType } from '../interfaces/Interfaces';
+import { createContext, useContext, useState } from 'react';
+import { Person, Task, TaskContextType } from '../interfaces/Interfaces';
 
 const TaskContext = createContext<TaskContextType | undefined>(undefined);
 
 export const TaskProvider = ({ children }: { children: any }) =>{
 
-    const URL = "http://localhost:3004/todos/"
+    const URL_TASKS = "http://localhost:3004/todos/"
+    const URL_PERSONS = "http://localhost:3004/persons/"
+
     const [tasks, setTasks] = useState<Task[]>([]);
-    const [taskId, setTaskId] = useState<number>(0);
-    const [popupActive, setPopActive] = useState<boolean>(false);
+    const [persons, setPersons] = useState<Person[]>([]);
 
     const editTask = (taskId: number, taskEdited: Task) => {
         setTasks((prevTasks) =>
@@ -18,17 +19,10 @@ export const TaskProvider = ({ children }: { children: any }) =>{
         );
     };
 
-    const handleCheckboxChange = (taskId: number) => {
-        setTaskId(taskId);
-    };
 
-    const togglePopup = () => {
-        setPopActive(!popupActive);
-    }
-
-    const deleteTask = async () => {
+    const deleteTask = async (taskId: number) => {
         try {
-            await fetch(URL + taskId, {
+            await fetch(URL_TASKS + taskId, {
                 method: 'DELETE',
             });
             setTasks(tasks?.filter(task => task.id !== taskId));
@@ -55,7 +49,7 @@ export const TaskProvider = ({ children }: { children: any }) =>{
 
     const getTasks = async () => {
         try {
-            const response = await fetch(URL, {
+            const response = await fetch(URL_TASKS, {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' }
             });
@@ -66,8 +60,21 @@ export const TaskProvider = ({ children }: { children: any }) =>{
         }
     }
 
+    const getPersons = async () => {
+        try {
+            const response = await fetch(URL_PERSONS, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' }
+            });
+            const data = await response.json();
+            setPersons(data);
+        } catch (error) {
+            console.error('Error getting tasks:', error);
+        }
+    }
+
     return (
-        <TaskContext.Provider value={{ tasks, getTasks, deleteTask }}>
+        <TaskContext.Provider value={{ tasks, getTasks, deleteTask, persons, getPersons }}>
             {children}
         </TaskContext.Provider>
     );

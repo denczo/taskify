@@ -16,8 +16,13 @@ export const UiProvider = ({ children }: { children: any }) => {
         setPopActive(!popupActive);
     }
 
+    const parseGermanDate = (dateString: string) => {
+        const [day, month, year] = dateString.split('.');
+        return new Date(`${year}-${month}-${day}`);
+    };
+
     return (
-        <UiContext.Provider value={{ taskId, handleCheckboxChange, popupActive, togglePopup }}>
+        <UiContext.Provider value={{ taskId, handleCheckboxChange, popupActive, togglePopup, parseGermanDate }}>
             {children}
         </UiContext.Provider>
     );

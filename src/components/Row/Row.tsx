@@ -5,6 +5,8 @@ import { useUiContext } from "../../contexts/UiProvider";
 const Row = ({data, person} : {data: Task, person: String}) => {
 
   const ui = useUiContext();
+  const dueDateConverted = ui?.parseGermanDate(data.dueDate);
+  const dateStatus = dueDateConverted? (dueDateConverted < Date.now() && !data.done? "Überfällig" : data.dueDate): "";
 
   return (
     <div className="row">
@@ -16,7 +18,7 @@ const Row = ({data, person} : {data: Task, person: String}) => {
             </div>
           <div style={{minWidth: '600px'}}>{data.label}</div>
           <div style={{minWidth: '200px'}}>{person}</div>
-          <div style={{minWidth: '150px'}}>{data.dueDate}</div>
+          <div style={{minWidth: '150px'}}>{dateStatus}</div>
           <div style={{minWidth: '100px'}}>{data.done? "Erledigt" : "Offen"}</div>
     </div>
   );
