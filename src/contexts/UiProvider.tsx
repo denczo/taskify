@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react';
-import { PopupAction, UiContextType } from '../interfaces/Interfaces';
+import { PopupAction, UiContextType } from "../react-app-env.d";
 
 const UiContext = createContext<UiContextType | undefined>(undefined);
 

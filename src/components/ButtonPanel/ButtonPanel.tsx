@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 import "./ButtonPanel.css";
 import { useTaskContext } from "../../contexts/TaskProvider";
 import { useUiContext } from "../../contexts/UiProvider";
-import { PopupType } from "../../interfaces/Interfaces";
+import { PopupType } from "../../react-app-env.d";
 
 const ButtonPanel = () => {
 
@@ -10,10 +10,10 @@ const ButtonPanel = () => {
     const ui = useUiContext();
     const action = (type: PopupType) => {
         if(type == PopupType.ADD){
-            ui?.togglePopup({name: "Neue Aufgabe", action: ()=>{}})
+            ui?.togglePopup({name: "Neue Aufgabe", action: (taskEdited) => task?.addTask(taskEdited)!})
         }
         else if(type === PopupType.EDIT){
-            ui?.togglePopup({name: `#${ui.taskId} Aufgabe bearbeiten`, action: () => task?.editTask(task.task)!})
+            ui?.togglePopup({name: `#${ui.taskId} Aufgabe bearbeiten`, action: (taskEdited) => task?.editTask(taskEdited)!})
         }
     }
 

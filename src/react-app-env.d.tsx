@@ -1,3 +1,4 @@
+/// <reference types="react-scripts" />
 export interface Task {
     id: number,
     label: string,
@@ -15,7 +16,6 @@ export interface Person {
 export interface TaskContextType {
     persons: Person[];
     getPersons: () => void;
-    task: Task;
     tasks: Task[];
     getTasks: () => void;
     editTask: (task: Task) => void;

@@ -1,7 +1,7 @@
-import { Task } from "../../interfaces/Interfaces";
 import "./Row.css";
 import { useUiContext } from "../../contexts/UiProvider";
 import { parseGermanDate } from "../../utils/dateUtils";
+import { Task } from "../../react-app-env.d";
 
 const Row = ({data, person} : {data: Task, person: String}) => {
 

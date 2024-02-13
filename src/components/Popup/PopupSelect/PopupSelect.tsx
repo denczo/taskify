@@ -1,4 +1,4 @@
-import { SelectOption } from "../../../interfaces/Interfaces";
+import { SelectOption } from "../../../react-app-env.d";
 import "./PopupSelect.css";
 
 const PopupSelect = ({options, selected, onChange}: {options: SelectOption[], selected: number, onChange: (value: number) => void}) => {
