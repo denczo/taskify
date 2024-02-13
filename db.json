@@ -1,39 +1,11 @@
 {
   "todos": [
     {
-      "id": 8,
-      "label": "Vollmacht für MSB bereitstellen",
-      "responsible": 36,
-      "dueDate": "05.04.2063",
-      "done": false
-    },
-    {
-      "id": 9,
-      "label": "Historische MSB-Daten integrieren für 2022",
-      "responsible": 24,
-      "dueDate": "01.10.2023",
-      "done": false
-    },
-    {
       "id": 11,
       "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
-      "responsible": 12,
-      "dueDate": "04.05.2025",
-      "done": false
-    },
-    {
-      "id": 12,
-      "label": "Kontinuierlicher MSB-Datenempfang einrichten",
-      "responsible": 41,
-      "dueDate": "11.12.2024",
-      "done": false
-    },
-    {
-      "id": 13,
-      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
-      "responsible": 17,
-      "dueDate": "11.12.2024",
-      "done": false
+      "responsible": 2,
+      "dueDate": "08.05.2025",
+      "done": 1
     },
     {
       "id": 14,

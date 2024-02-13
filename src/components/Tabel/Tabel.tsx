@@ -14,12 +14,16 @@ const Tabel = () => {
         task?.getPersons();
     }, [])
 
+    useEffect(() => {
+
+    }, [task?.tasks])
+
     return (<div className="tabel">
         <TabelHeader />
         <div style={{ height: '700px', overflowY: 'scroll', overflowX: 'hidden' }}>
             {task?.tasks.map(task => {
                 const person = matchingPersons?.find(p => p.id === task.responsible);
-                return <Row data={task} person={person ? person.name : task.responsible.toString()} key={task.id} />
+                return <Row data={task} person={person ? person.name : task.responsible?.toString()!} key={task.id} />
             })}
         </div>
     </div>

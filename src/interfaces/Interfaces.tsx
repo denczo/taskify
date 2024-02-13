@@ -15,16 +15,33 @@ export interface Person {
 export interface TaskContextType {
     persons: Person[];
     getPersons: () => void;
+    task: Task;
     tasks: Task[];
     getTasks: () => void;
-    // addTask: (task: Task) => void;
+    editTask: (task: Task) => void;
+    addTask: (task: Task) => void;
     deleteTask: (taskId: number) => void;
 }
 
 export interface UiContextType {
     taskId: number;
     popupActive: boolean;
-    togglePopup: () => void;
+    popupAction: PopupAction;
+    togglePopup: (popupAction?: PopupAction) => void;
     handleCheckboxChange: (taskId: number) => void;
-    parseGermanDate: (dateString: string) => void;
+}
+
+export interface PopupAction{
+    name: string,
+    action: (task: Task) => void;
+}
+
+export enum PopupType{
+    ADD = 0,
+    EDIT = 1,
+}
+
+export interface SelectOption{
+    name: string,
+    value: number,
 }

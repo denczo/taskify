@@ -10,7 +10,7 @@ const App = () => {
 
   return (
       <div className="App">
-        {ui?.popupActive? <Popup /> : <></>}
+        {ui?.popupActive? <Popup action={ui.popupAction}/> : <></>}
         <header className="App-header">
           <div id="headerContent">
             Aufgabenliste

@@ -3,22 +3,48 @@ import { Person, Task, TaskContextType } from '../interfaces/Interfaces';
 
 const TaskContext = createContext<TaskContextType | undefined>(undefined);
 
-export const TaskProvider = ({ children }: { children: any }) =>{
+export const TaskProvider = ({ children }: { children: any }) => {
 
     const URL_TASKS = "http://localhost:3004/todos/"
     const URL_PERSONS = "http://localhost:3004/persons/"
 
     const [tasks, setTasks] = useState<Task[]>([]);
+    const [task, setTask] = useState<Task>({ id: 0, label: "", responsible: 0, dueDate: "", done: false });
     const [persons, setPersons] = useState<Person[]>([]);
 
-    const editTask = (taskId: number, taskEdited: Task) => {
-        setTasks((prevTasks) =>
-            prevTasks?.map((task) =>
-                task.id === taskId ? { ...task, task: task } : task
-            )
-        );
+    const addTask = async (newTask: Task) => {
+        try {
+            await fetch(URL_TASKS + tasks.length, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(newTask),
+            });
+            const updatedTasks = [...tasks];
+            setTasks(updatedTasks);
+        } catch (error) {
+            console.error('Error adding task:', error);
+        }
     };
 
+
+    const editTask = async (editedTask: Task) => {
+        console.log("HERE WE GO",editedTask.id)
+        try {
+            await fetch(URL_TASKS + editedTask.id, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(editedTask)
+            });
+            const index = tasks.findIndex(task => task.id === editedTask.id);
+            const updatedTasks = [...tasks];
+            updatedTasks[index] = editedTask;
+            setTasks(updatedTasks);
+        } catch (error) {
+            console.error('Error updating task:', error);
+        }
+    };
 
     const deleteTask = async (taskId: number) => {
         try {
@@ -30,22 +56,6 @@ export const TaskProvider = ({ children }: { children: any }) =>{
             console.error('Error deleting task:', error);
         }
     };
-
-    // const addTask = async (newTask) => {
-    //     try {
-    //       const response = await fetch('https://your-api-url/tasks', {
-    //         method: 'POST',
-    //         headers: {
-    //           'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(newTask),
-    //       });
-    //       const data = await response.json();
-    //       setTasks([...tasks, data]); // Assuming the server returns the created task with an ID
-    //     } catch (error) {
-    //       console.error('Error adding task:', error);
-    //     }
-    //   };
 
     const getTasks = async () => {
         try {
@@ -74,7 +84,7 @@ export const TaskProvider = ({ children }: { children: any }) =>{
     }
 
     return (
-        <TaskContext.Provider value={{ tasks, getTasks, deleteTask, persons, getPersons }}>
+        <TaskContext.Provider value={{ task, tasks, getTasks, addTask, editTask, deleteTask, persons, getPersons }}>
             {children}
         </TaskContext.Provider>
     );

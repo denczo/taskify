@@ -1,12 +1,13 @@
 import { Task } from "../../interfaces/Interfaces";
 import "./Row.css";
 import { useUiContext } from "../../contexts/UiProvider";
+import { parseGermanDate } from "../../utils/dateUtils";
 
 const Row = ({data, person} : {data: Task, person: String}) => {
 
   const ui = useUiContext();
-  const dueDateConverted = ui?.parseGermanDate(data.dueDate);
-  const dateStatus = dueDateConverted? (dueDateConverted < Date.now() && !data.done? "Überfällig" : data.dueDate): "";
+  const dueDateConverted = parseGermanDate(data.dueDate);
+  const dateStatus = dueDateConverted? (new Date(dueDateConverted).getTime() < Date.now() && !data.done? "Überfällig" : data.dueDate): "";
 
   return (
     <div className="row">

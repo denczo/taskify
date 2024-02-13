@@ -1,14 +1,12 @@
-import { useState } from "react";
+import { SelectOption } from "../../../interfaces/Interfaces";
 import "./PopupSelect.css";
 
-const PopupSelect = ({options}: {options: string[]}) => {
-
-    const [option, setOption] = useState<string>();
+const PopupSelect = ({options, selected, onChange}: {options: SelectOption[], selected: number, onChange: (value: number) => void}) => {
 
     return (
         <div className="popupSelect">
-            <select id="status" value={option} onChange={(e) => setOption(e.target.value)} name="status">
-                {options.map(option => <option value={option}>{option}</option>)}
+            <select id="status" value={selected} onChange={(e) => {onChange(parseInt(e.target.value))}} name="status">
+                {options.map((option, index) => <option value={option.value} key={index}>{option.name}</option>)}
             </select>
         </div>);
 }
