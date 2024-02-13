@@ -1,7 +1,6 @@
 select{
-    align-self: center;
+    align-self: left;
     border: 2px solid black;
-    width: 82.5%;
     padding: 10px;
     border-radius: 3px;
 }

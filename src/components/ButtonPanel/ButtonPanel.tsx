@@ -13,7 +13,7 @@ const ButtonPanel = () => {
             ui?.togglePopup({name: "Neue Aufgabe", action: (taskEdited) => task?.addTask(taskEdited)!})
         }
         else if(type === PopupType.EDIT){
-            ui?.togglePopup({name: `#${ui.taskId} Aufgabe bearbeiten`, action: (taskEdited) => task?.editTask(taskEdited)!})
+            ui?.togglePopup({name: "Aufgabe bearbeiten", action: (taskEdited) => task?.editTask(taskEdited)!})
         }
     }
 

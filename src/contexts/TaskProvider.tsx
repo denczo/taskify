@@ -11,8 +11,8 @@ export const TaskProvider = ({ children }: { children: any }) => {
     const [tasks, setTasks] = useState<Task[]>([]);
     const [persons, setPersons] = useState<Person[]>([]);
 
-    const addTask = async (newTask: Task) => {
-
+    const addTask = async (task: Task) => {
+        const newTask: Task = {id: Date.now(), label: task.label, responsible: task.responsible, dueDate: task.dueDate, done: false}
         try {
             await fetch(URL_TASKS, {
                 method: 'POST',
@@ -27,7 +27,6 @@ export const TaskProvider = ({ children }: { children: any }) => {
             console.error('Error adding task:', error);
         }
     };
-
 
     const editTask = async (editedTask: Task) => {
         try {

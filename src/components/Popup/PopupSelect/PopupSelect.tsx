@@ -5,8 +5,8 @@ const PopupSelect = ({options, selected, onChange}: {options: SelectOption[], se
 
     return (
         <div className="popupSelect">
-            <select id="status" value={selected} onChange={(e) => {onChange(parseInt(e.target.value))}} name="status">
-                {options.map((option, index) => <option value={option.value} key={index}>{option.name}</option>)}
+            <select id={Date.now().toString()} value={selected} onChange={(e) => {onChange(parseInt(e.target.value))}} name="status">
+                {options.map((option, index) => <option value={option.value} id={"select"+index.toString} key={index}>{option.name}</option>)}
             </select>
         </div>);
 }

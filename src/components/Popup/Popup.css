@@ -12,17 +12,17 @@
 }
 
 input{
-    align-self: center;
+    align-self: flex-start;
     border: 2px solid black;
-    width: 80%;
+    width: 96.5%;
     padding: 10px;
     border-radius: 3px;
 }
 
 select{
-    align-self: center;
+    align-self: flex-start;
     border: 2px solid black;
-    width: 82.5%;
+    width: 100%;
     padding: 10px;
     border-radius: 3px;
 }
@@ -31,6 +31,7 @@ select{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     padding: 5px;
     width: 60%;
@@ -41,7 +42,21 @@ select{
 }
 
 #popupButtons{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.section label{
+    align-self: self-start;
+    margin-bottom: 2px;
+    font-weight: bold;
 }
