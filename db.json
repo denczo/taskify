@@ -2,7 +2,7 @@
   "todos": [
     {
       "id": 11,
-      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren",
+      "label": "Historische Messdaten für 2022 aus Untermesssystemen integrieren cool",
       "responsible": 2,
       "dueDate": "08.05.2025",
       "done": 1
@@ -11,12 +11,12 @@
       "id": 14,
       "label": "Mess- und Bilanzierungskonzept erstellen",
       "responsible": 19,
-      "dueDate": "31.12.2024",
+      "dueDate": "27.12.2024",
       "done": false
     },
     {
       "id": 15,
-      "label": "Historische MSB-Daten integrieren für 2022",
+      "label": "Historische MSB-Daten integrieren für 2022 test",
       "responsible": 35,
       "dueDate": "31.12.2024",
       "done": false
@@ -148,13 +148,6 @@
       "done": false
     },
     {
-      "id": 34,
-      "label": "Konfiguration anlegen",
-      "responsible": 12,
-      "dueDate": "31.12.2025",
-      "done": false
-    },
-    {
       "id": 35,
       "label": "Historische Messdaten für 2022 aus Untermesssystemen bereitstellen",
       "responsible": 18,
@@ -192,7 +185,7 @@
     {
       "id": 40,
       "label": "Kontinuierlicher Messdatenempfang aus Untermesssystemen einrichten",
-      "responsible": 27,
+      "responsible": 17,
       "dueDate": "11.12.2024",
       "done": false
     },
@@ -220,8 +213,8 @@
     {
       "id": 44,
       "label": "Kontinuierlicher MSB-Datenempfang einrichten",
-      "responsible": 19,
-      "dueDate": "31.12.2023",
+      "responsible": 3,
+      "dueDate": "29.03.2024",
       "done": false
     },
     {
@@ -265,6 +258,13 @@
       "responsible": 44,
       "dueDate": "01.01.2022",
       "done": true
+    },
+    {
+      "id": 1707839875958,
+      "label": "Aufgabenliste mit regulatorischen Pflichten anlegen",
+      "responsible": 41,
+      "dueDate": "31.12.2023",
+      "done": false
     }
   ],
   "persons": [
