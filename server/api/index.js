@@ -5,7 +5,7 @@ const app = express();
 // const fs = require('fs');
 
 // // Use json-server router
-const router = jsonServer.router('db.json');
+const router = jsonServer.router('./db.json');
 
 // Middlewares
 app.use(cors());
@@ -41,7 +41,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
-
+app.use(jsonServer.rewriter({
+  '/api/*': '/$1',
+  '/blog/:resource/:id/show': '/:resource/:id'
+}))
 // // Serve JSON Server router under a specific route prefix
 app.use('/', router);
 
