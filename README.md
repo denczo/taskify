@@ -16,13 +16,13 @@ A project management tool to keep track of ongoing tasks. New Tasks can be creat
 Run
 ````
 cd server
-node server.js
+npm start
 ````
 
 
 The server provides CRUD endpoints and has two routes which return a json based on the request
 
-`http://localhost:3004/todos`
+`http://localhost:5000/todos`
 ````
 GET    /todos
 GET    /todos/1
@@ -31,7 +31,7 @@ PUT    /todos/1
 PATCH  /todos/1
 DELETE /todos/1
 ````
-`http://localhost:3004/persons`
+`http://localhost:5000/persons`
 ````
 GET    /persons
 GET    /persons/1
@@ -41,7 +41,7 @@ PATCH  /persons/1
 DELETE /persons/1
 ````
 
-`http://localhost:3004/reset`
+`http://localhost:5000/reset`
 Resets the data to its original state
 
 ## Client
