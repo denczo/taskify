@@ -1,0 +1,35 @@
+.tableHeader {
+    display: flex;
+    position: fixed;
+    background-color: slategray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+    font-weight: bold;
+    width: inherit;
+    margin-top: -40px;
+    color: white;
+}
+
+.tableHeader div{
+    padding: 10px;
+}
+
+.tableHeader div:nth-child(1){
+    width: 5%;
+}
+
+.tableHeader div:nth-child(2){
+    width: 40%;
+}
+
+.tableHeader div:nth-child(3){
+    width: 20%;
+}   
+
+.tableHeader div:nth-child(4){
+    width: 25%;
+}
+.tableHeader div:nth-child(5){
+    width: 10%;
+}

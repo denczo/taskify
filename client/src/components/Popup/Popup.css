@@ -1,0 +1,76 @@
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    align-self: flex-start;
+    border: 2px solid white;
+    width: 96.5%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+select{
+    align-self: flex-start;
+    border: 2px solid white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+select:focus{
+    border: 2px solid black;
+  
+}
+
+#popupContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+    width: 60%;
+    min-height: 60%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+#popupContent h2{
+    width: 100%;
+    padding: 30px 10px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0;
+}
+
+#popupButtons{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.section label{
+    align-self: self-start;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
