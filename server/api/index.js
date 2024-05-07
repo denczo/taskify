@@ -1,15 +1,15 @@
-// const express = require('express');
-// const jsonServer = require('json-server');
-// const cors = require('cors');
-// const app = express();
+const express = require('express');
+const jsonServer = require('json-server');
+const cors = require('cors');
+const app = express();
 // const fs = require('fs');
 
 // // Use json-server router
 // const router = jsonServer.router('./data/db.json');
 
-// // Middlewares
-// app.use(cors());
-// app.use(express.json());
+// Middlewares
+app.use(cors());
+app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
 
 // // Function to read JSON file synchronously
@@ -39,34 +39,17 @@
 //   }
 // });
 
-// app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 
 // // Serve JSON Server router under a specific route prefix
 // app.use('/', router);
 
 // // Start the server
-// const PORT = process.env.PORT || 5000;
-// app.listen(PORT, () => {
-//   console.log(`JSON Express Server is running on port ${PORT}`);
-// });
-
-// // Export the Express app as a serverless function
-// module.exports = app;
-
-
-
-const express = require("express");
-
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Express on Vercel");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`JSON Express Server is running on port ${PORT}`);
 });
 
-app.listen(5000, () => {
-  console.log("Running on port 5000.");
-});
-
-// Export the Express API
+// Export the Express app as a serverless function
 module.exports = app;
