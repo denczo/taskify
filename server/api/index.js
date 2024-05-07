@@ -5,12 +5,12 @@ const app = express();
 // const fs = require('fs');
 
 // // Use json-server router
-// const router = jsonServer.router('./data/db.json');
+const router = jsonServer.router('./data/db.json');
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 // // Function to read JSON file synchronously
 // const readJSONFile = (filePath) => {
@@ -43,7 +43,7 @@ app.get("/", (req, res) => res.send("Express on Vercel"));
 
 
 // // Serve JSON Server router under a specific route prefix
-// app.use('/', router);
+app.use('/', router);
 
 // // Start the server
 const PORT = process.env.PORT || 5000;
