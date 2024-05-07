@@ -5,7 +5,7 @@ const app = express();
 // const fs = require('fs');
 
 // // Use json-server router
-const router = jsonServer.router('./data/db.json');
+const router = jsonServer.router('./db.json');
 
 // Middlewares
 app.use(cors());

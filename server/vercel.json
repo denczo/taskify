@@ -1,5 +1,16 @@
 {
-	"version": 2,
-	"rewrites": [{ "source": "/(.*)", "destination": "/api" }],
-    "installCommand": "npm install"
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/api"
+        }
+    ],
+    "installCommand": "npm install",
+    "functions": {
+        "api/index.js": {
+            "memory": 1024,
+            "includeFiles": "db.json"
+        }
+    }
 }
