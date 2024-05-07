@@ -5,9 +5,9 @@ const TaskContext = createContext<TaskContextType | undefined>(undefined);
 
 export const TaskProvider = ({ children }: { children: any }) => {
 
-    const URL_TASKS = "http://localhost:3004/todos"
-    const URL_PERSONS = "http://localhost:3004/persons/"
-    const RESET_DATA = "http://localhost:3004/reset/"
+    const URL_TASKS = "http://www.unimatrixzero.eu:5000/todos"
+    const URL_PERSONS = "http://www.unimatrixzero.eu:5000/persons/"
+    const RESET_DATA = "http://www.unimatrixzero.eu:5000/reset/"
 
 
     const [tasks, setTasks] = useState<Task[]>([]);
