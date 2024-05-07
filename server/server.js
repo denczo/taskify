@@ -47,3 +47,6 @@ const PORT = process.env.PORT || 3004;
 app.listen(PORT, () => {
   console.log(`JSON Express Server is running on port ${PORT}`);
 });
+
+// Export the Express app as a serverless function
+module.exports = app;
